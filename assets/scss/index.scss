@@ -1,25 +1,39 @@
 @import "./utils/index";
 @import "./vendor/bootstrap";
+@mixin call-font-size($normal: 18px, $downSm: 16px) {
+  @include font-size($normal);
+  @include media-breakpoint-down(sm){
+    @include font-size($downSm);
+  }
+}
 
 html{
-  font-family: 'Open Sans', sans-serif;
+  body {
+    main {
+      &.container {
+        max-width: 500px;
+      }
+    }
+  }
 }
 
 .#{$namespace} {
     &-section {
+      h2 {
+        @include call-font-size(18px);
+      }
       &:nth-child(odd){
         background-color: #{$light};
       }
     }
     &-details {
-
+      summary {
+        @include call-font-size(18px);
+      }
     }
   &-img{
     img {
       width: 100%;
     }
-  }
-  &-header {
-    background-color: #{$header};
   }
 }
