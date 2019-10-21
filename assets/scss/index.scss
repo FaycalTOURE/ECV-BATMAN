@@ -1,5 +1,22 @@
-.hello{
-  .world {
-    color: #fff;
+@import "./utils/index";
+@import "./vendor/bootstrap";
+
+html{
+  font-family: 'Open Sans', sans-serif;
+}
+
+.#{$namespace} {
+    &-section {
+      &:nth-child(odd){
+        background-color: #{$light};
+      }
+    }
+    &-details {
+
+    }
+  &-img{
+    img {
+      width: 100%;
+    }
   }
 }
