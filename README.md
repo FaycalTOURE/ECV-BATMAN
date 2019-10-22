@@ -1,6 +1,6 @@
 # ECV-BATMAN
 
-* Npm init
+* RUN npm install
 - RUN gulp 'sass' to build .css file
 + Go to index.html 
 
