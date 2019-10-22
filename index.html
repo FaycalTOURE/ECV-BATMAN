@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/all.min.css">
 </head>
-<body itemscope itemtype="http://schema.org/ScreeningEvent">
+<body itemscope itemtype="http://schema.org/Movie">
 <header class="bg-header text-white text-center py-1 mb-5">
     <h1 itemprop="name"> <i class="icon-videocam"></i> Batman begins</h1>
 </header>
@@ -21,7 +21,7 @@
     </section>
     <section class="bm-section p-2">
         <h2>Série</h2>
-        <span itemprop="text">Batman</span>
+        <span itemprop="director">Batman</span>
     </section>
     <section class="bm-section p-2">
         <h2>Acteurs </h2>
@@ -47,7 +47,9 @@
     </section>
     <section class="bm-section p-2">
         <h2>Date de sortie cinéma</h2>
-        <span itemprop="datePublished">10 septembre 2005</span>
+        <span itemprop="text">
+            <time datetime="2005-09-1" itemprop="dateCreated">10 septembre 2005</time>
+        </span>
     </section>
     <details itemprop="description" class="bm-details p-2">
         <summary>
